@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: "Work Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.major {
+  font-family: "Abril Fatface", cursive;
+}
+
+$color-black: #0F0F24;
+$color-primary: #5B5FD4;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: #F9F7F6;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  margin: auto;
+  width: 100%;
+  padding: 2rem;
+}
+
+.navmenu__link {
+  text-decoration: none;
+  color: $color-black;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.5rem;
+  transition: all 0.2s ease-in;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  &:hover {
+    color: #7781d4;
+    background: #e7e9fc;
+  }
+}
