@@ -1,15 +1,16 @@
 import React from 'react'
 import { ReactComponent as LogoIcon } from "../assets/ho_logo_nav.svg";
+import { ReactComponent as Hamburger } from "../assets/hamburger.svg";
 
 const Navbar = () => {
     return (
         <div className="nav">
-            <div className="container">
+            <div className="nav__container">
                 <LogoIcon />
                 <div className="navmenu">
                     <a href="#" className="navmenu__link">How It Works</a>
                     <a href="#" className="navmenu__link">Contact</a>
-                    <a href="#" className="navmenu__link">Get Started</a>
+                    <a href="#" className="navmenu__button">Get Started</a>
                 </div>
             </div>
 

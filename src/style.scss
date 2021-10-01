@@ -1,6 +1,15 @@
+$color-black: #0f0f24;
+$color-white: #fff;
+$color-primary: #5b5fd4;
+$color-light: #969afc;
+$color-dark: #2c2e6f;
+$color-yellow: #ffcb47;
+$color-beige: #f9f7f6;
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,9 +29,6 @@ button {
   font-family: "Abril Fatface", cursive;
 }
 
-$color-black: #0F0F24;
-$color-primary: #5B5FD4;
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -33,10 +39,14 @@ $color-primary: #5B5FD4;
   left: 0;
   right: 0;
   z-index: 3;
-  background-color: #F9F7F6;
+  background-color: $color-white;
+  transition: box-shadow .12s ease-in;
+  &:hover{
+    box-shadow: 0 2px 5px rgb(0 0 0 / 8%);
+  }
 }
 
-.container {
+.nav__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,19 +54,81 @@ $color-primary: #5B5FD4;
   max-width: 1600px;
   margin: auto;
   width: 100%;
-  padding: 2rem;
+  padding: 24px 100px;
+}
+
+.navmenu {
+  display: flex;
+  justify-content: space-between;
 }
 
 .navmenu__link {
   text-decoration: none;
   color: $color-black;
-  font-size: 0.9rem;
-  padding: 0.7rem 1.5rem;
-  transition: all 0.2s ease-in;
-  border-radius: 0.5rem;
+  font-size: 16px;
   font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in;
+  margin-right: 32px;
   &:hover {
-    color: #7781d4;
-    background: #e7e9fc;
+    color: $color-primary;
   }
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    background: $color-light;
+    transition: width 0.3s ease-in 0s;
+    width: 0;
+  }
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+.navmenu__button {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: $color-white;
+  background-color: $color-primary;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in;
+  &:hover {
+    background: $color-dark;
+  }
+}
+
+.viewport {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 93px;
+}
+
+.section {
+  max-width: 1600px;
+  height: 100%;
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $color-beige;
+}
+
+.title-major {
+  font-family: "Abril Fatface", cursive;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 76px;
 }
