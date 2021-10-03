@@ -1,17 +1,28 @@
-import React from 'react'
+import { React, useState } from 'react'
 import { ReactComponent as LogoIcon } from "../assets/ho_logo_nav.svg";
-import { ReactComponent as Hamburger } from "../assets/hamburger.svg";
 
 const Navbar = () => {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
         <div className="nav">
             <div className="nav__container">
                 <LogoIcon />
+                <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    <span />
+                    <span />
+                    <span className="zero-margin" />
+                </div>
                 <div className="navmenu">
                     <a href="#" className="navmenu__link">How It Works</a>
                     <a href="#" className="navmenu__link">Contact</a>
                     <a href="#" className="navmenu__button">Get Started</a>
                 </div>
+            </div>
+            <div className={`navmenu-mobile ${isMenuOpen ? "open" : ""}`}>
+                <a href="#" className="navmenu__link-mobile">How It Works</a>
+                <a href="#" className="navmenu__link-mobile">Contact</a>
             </div>
 
             {/* <Container>
