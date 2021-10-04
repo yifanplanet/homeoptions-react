@@ -44,30 +44,32 @@ const home = () => {
             </div>
 
             <div className="section section-beige">
-                <div className="section__box section__box-small">
-                    <h1 className="title-large">Our homeowner-first approach</h1>
-                    <p className="text-main" style={{ marginTop: 28 }}>Our process is simple, straightforward, and transparent. We believe so deeply in it that we will pay you cash upfront to introduce you to the best in the business.</p>
-                </div>
-                <div className="section__box section__box-large section__box-listitem">
-                    <div className="listitem">
-                        <div className="listitem__bulletcircle">1</div>
-                        <div className="listitem__content">
-                            <div className="title-small" style={{ marginBottom: 9 }}>We send you an offer</div>
-                            <div className="text-regular">We will send you an estimated offer specific to your current home after checking your eligibility.</div>
-                        </div>
+                <div className="section__boxcontainer">
+                    <div className="section__box section__box-small">
+                        <h1 className="title-large">Our homeowner-first approach</h1>
+                        <p className="text-main" style={{ marginTop: 28 }}>Our process is simple, straightforward, and transparent. We believe so deeply in it that we will pay you cash upfront to introduce you to the best in the business.</p>
                     </div>
-                    <div className="listitem">
-                        <div className="listitem__bulletcircle">2</div>
-                        <div className="listitem__content">
-                            <div className="title-small" style={{ marginBottom: 9 }}>You get the money today</div>
-                            <div className="text-regular">You receive the funds in as little as 24 hours to use however you want.</div>
+                    <div className="section__box section__box-large section__box-listitem">
+                        <div className="listitem">
+                            <div className="listitem__bulletcircle">1</div>
+                            <div className="listitem__content">
+                                <div className="title-small" style={{ marginBottom: 9 }}>We send you an offer</div>
+                                <div className="text-regular">We will send you an estimated offer specific to your current home after checking your eligibility.</div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="listitem" style={{ marginBottom: 0 }}>
-                        <div className="listitem__bulletcircle">3</div>
-                        <div className="listitem__content">
-                            <div className="title-small" style={{ marginBottom: 9 }}>You sell when you are ready</div>
-                            <div className="text-regular">Once you decide to put your house on the market, we connect you with the best real estate agents in your area who will help sell your home.</div>
+                        <div className="listitem">
+                            <div className="listitem__bulletcircle">2</div>
+                            <div className="listitem__content">
+                                <div className="title-small" style={{ marginBottom: 9 }}>You get the money today</div>
+                                <div className="text-regular">You receive the funds in as little as 24 hours to use however you want.</div>
+                            </div>
+                        </div>
+                        <div className="listitem" style={{ marginBottom: 0 }}>
+                            <div className="listitem__bulletcircle">3</div>
+                            <div className="listitem__content">
+                                <div className="title-small" style={{ marginBottom: 9 }}>You sell when you are ready</div>
+                                <div className="text-regular">Once you decide to put your house on the market, we connect you with the best real estate agents in your area who will help sell your home.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
