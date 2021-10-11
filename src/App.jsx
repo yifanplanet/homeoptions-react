@@ -5,6 +5,7 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 import HomePage from "./pages/home.jsx";
 import HowPage from "./pages/how.jsx";
 import AboutPage from "./pages/about.jsx";
+import NotFoundPage from './pages/notfound.jsx';
 
 const App = () => {
     return (
@@ -22,6 +23,9 @@ const App = () => {
                     </Route>
                     <Route path="/about" exact>
                         <AboutPage />
+                    </Route>
+                    <Route>
+                        <NotFoundPage />
                     </Route>
                 </Switch>
             </div>
